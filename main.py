@@ -98,12 +98,12 @@ while running:
         print("Draw!")
         break
 
-    yc = correct_input("Y")
+    yc = correct_input("O")
     i1 ,i2 = get_pos(yc)
-    moves[i1][i2] = "Y"
+    moves[i1][i2] = "O"
     print_board()
     if check_win() != None:
-        print(f"\033[31m-------------- Y Wins! --------------\033[0m")
+        print(f"\033[31m-------------- O Wins! --------------\033[0m")
         print_board()
         break
     if len(all_moves) == 9:
